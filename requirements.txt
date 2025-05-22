@@ -1,0 +1,16 @@
+bpy==4.0.0    # blender python package. Version to check
+mathutils==3.3.0
+numpy==2.2.2
+dotenv
+openai
+PyYAML
+pandas==2.2.0
+rich 
+scikit-learn
+seaborn
+matplotlib
+groq
+# add HF
+huggingface-hub
+
+# préciser les versions. Faudra faire un .toml

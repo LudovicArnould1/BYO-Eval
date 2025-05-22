@@ -172,3 +172,20 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Blender backup files
+*.blend1
+*.blend2
+
+# Generated files
+**/*.pyc
+**/__pycache__/
