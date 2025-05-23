@@ -2657,7 +2657,7 @@ def main():
         if not prompt:
             console.print(f"[bold yellow]Note: Pre-prompt '{key}' for game '{GAME_TYPE}' is empty and will be used as a no-prompt option.[/bold yellow]")
     
-    # Don't filter out empty pre-prompts - Cas Neutral  
+    # Don't filter out empty pre-prompts
     # selected_pre_prompts = {k: v for k, v in selected_pre_prompts.items() if v}
     
     if not selected_pre_prompts:
