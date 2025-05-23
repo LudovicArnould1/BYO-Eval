@@ -1,4 +1,4 @@
-bpy==4.0.0    # blender python package. Version to check
+bpy==4.0.0   
 mathutils==3.3.0
 numpy==2.2.2
 dotenv
@@ -12,5 +12,3 @@ matplotlib
 groq
 # add HF
 huggingface-hub
-
-# préciser les versions. Faudra faire un .toml
