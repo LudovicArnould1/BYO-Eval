@@ -421,7 +421,7 @@ class Diagnostic:
                     for var_key in actual_variables_to_add_as_columns:
                         image_specific_test_values[var_key] = pd.NA
 
-                # Run the evaluation for the single question key\la{Faire plus court ci-dessous}
+                # Run the evaluation for the single question key
                 evaluation = evaluate_vlm_on_task(vlm, image_path, annotation_path, [question_key], reformulate, pre_prompt)
                 print("evaluation: ", evaluation)
 

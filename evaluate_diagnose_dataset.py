@@ -122,7 +122,7 @@ PROVIDERS = {
     }
 }
 
-# Game types (for question generation) --> voir les autres jeux
+
 GAME_TYPE = None  # Will be set by prompt
 
 def find_images_and_annotations() -> List[Tuple[Path, Path]]:
@@ -179,7 +179,7 @@ def extract_annotation_info(annotation_path: Path) -> Dict:
         else:
             piece_types[piece_type] = 1
 
-    # Summarizeeed information
+    # Summarized information
     return {
         "board_pattern": board_info.get("pattern", "unknown"),
         "board_dimensions": f"{board_info.get('dimensions', {}).get('rows', 0)}x{board_info.get('dimensions', {}).get('columns', 0)}",
