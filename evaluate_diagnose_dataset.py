@@ -580,7 +580,7 @@ def evaluate_vlm_on_task(vlm, image_path: Path, annotation_path: Path, question_
             vlm_answers.append(answer)
             call_metrics.append(result.get("call_metrics", {}))
             
-            # Use Regex for numeric extraction --> a verifier 
+            # Use Regex for numeric extraction
             if any(keyword in question.lower() for keyword in ["how many", "count","there are","number", "squares"]):
                 try:
                     extracted_answer = extract_numeric_value(answer)
@@ -605,7 +605,7 @@ def evaluate_vlm_on_task(vlm, image_path: Path, annotation_path: Path, question_
 
                         numeric_count += 1
                     except (ValueError, TypeError):
-                        # Non-numeric answers (on les ignores)
+                        # Non-numeric answers
                         pass
                 except Exception as e:
                     console.print(f"[bold red][DEBUG] Error extracting numeric value: {e}, answer={answer}, expected={expected}")
