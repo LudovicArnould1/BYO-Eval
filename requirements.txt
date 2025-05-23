@@ -1,4 +1,4 @@
-bpy==4.0.0   
+bpy==4.0.0
 mathutils==3.3.0
 numpy==2.2.2
 dotenv
